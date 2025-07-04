@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to The Toasted Mug, your cozy spot for the finest coffee, tea, and delightful treats. Enjoy classic drip coffee, rich espresso, and specialty lattes.">
-    <meta name="keywords" content="The Toasted Mug, coffee, cafe, tea, espresso, latte, cappuccino, macchiato, iced coffee, hot chocolate, plant-based milk, bakery, cozy cafe, pet friendly, free wifi, photo booth, outdoor seating, vegan options, indoor games">
+    <meta name="keywords" content="The Toasted Mug, coffee, cafe, tea, espresso, latte, cappuccino, macchiato, iced coffee, hot chocolate, plant-based milk, bakery, cozy cafe, pet friendly, free wifi, photo booth, outdoor seating, vegan options, indoor games, coffee quotes, tea quotes, cake quotes">
     <meta name="author" content="The Toasted Mug Team">
     <title>The Toasted Mug - Your Cozy Coffee & Tea Haven</title>
     <!-- Tailwind CSS CDN -->
@@ -42,6 +42,18 @@
             height: 48px;
             fill: #6f4e37; /* Coffee Brown for icons */
         }
+        .quote-text {
+            font-style: italic;
+            color: #6f4e37; /* Coffee Brown */
+            font-size: 1.5rem; /* Larger font size for quotes */
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            min-height: 3em; /* Ensure consistent height to prevent layout shifts */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -65,6 +77,8 @@
             <p class="text-xl text-gray-700 leading-relaxed mb-8">
                 Your cozy haven for exceptional coffee, delightful teas, and scrumptious treats. At <span class="font-semibold">The Toasted Mug</span>, every sip and bite is crafted with passion.
             </p>
+            <!-- Catchy Coffee Quotes Section -->
+            <div id="coffee-quote" class="quote-text"></div>
             <img src="https://placehold.co/1000x500/f5e9dc/3e2c23?text=Cozy+Cafe+Interior" alt="A warm and inviting interior of The Toasted Mug cafe with comfortable seating and soft lighting." class="w-full h-auto rounded-xl shadow-lg mx-auto max-w-4xl">
         </section>
 
@@ -75,7 +89,10 @@
                 <!-- Coffee Section -->
                 <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200">
                     <h4 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
-                        <svg class="feature-icon mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                        <!-- Coffee Bean Icon -->
+                        <svg class="feature-icon mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line>
+                        </svg>
                         Coffee Creations
                     </h4>
                     <ul class="list-disc list-inside space-y-2 text-gray-700">
@@ -94,7 +111,10 @@
                 <!-- Tea Section -->
                 <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200">
                     <h4 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
-                        <svg class="feature-icon mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4h3a4 4 0 0 0 4-4V6a4 4 0 0 0-4-4z"></path><path d="M2 14h12a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H2z"></path><line x1="16" y1="2" x2="16" y2="10"></line></svg>
+                        <!-- Tea Glass Icon -->
+                        <svg class="feature-icon mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 16v3a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-3"></path><path d="M2 7h20"></path><path d="M12 15V7"></path><path d="M12 7H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-6"></path>
+                        </svg>
                         Soothing Teas
                     </h4>
                     <ul class="list-disc list-inside space-y-2 text-gray-700">
@@ -106,7 +126,10 @@
                 <!-- Iced Drinks Section -->
                 <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200">
                     <h4 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
-                        <svg class="feature-icon mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v18h12V3H6z"></path><path d="M12 18V6"></path><path d="M9 9h6"></path></svg>
+                        <!-- Mug Icon -->
+                        <svg class="feature-icon mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                        </svg>
                         Refreshing Iced Drinks
                     </h4>
                     <ul class="list-disc list-inside space-y-2 text-gray-700">
@@ -194,5 +217,37 @@
             <p class="mt-2 text-sm">Crafted with care by The Toasted Mug team.</p>
         </div>
     </footer>
+
+    <script>
+        const quotes = [
+            "Life happens, coffee helps.",
+            "But first, coffee.",
+            "May your coffee be strong and your Monday be short.",
+            "Coffee: Because adulting is hard.",
+            "A yawn is a silent scream for coffee.",
+            "All you need is love and more coffee.",
+            "Coffee is a hug in a mug.",
+            "A bad day with coffee is better than a good day without it.",
+            "Life is short, eat the cake.",
+            "Cake makes everything better.",
+            "Where there's tea, there's happiness.",
+            "Tea is a cup of life."
+        ];
+        let currentQuoteIndex = 0;
+        const coffeeQuoteElement = document.getElementById('coffee-quote');
+
+        function displayNextQuote() {
+            if (coffeeQuoteElement) {
+                coffeeQuoteElement.textContent = quotes[currentQuoteIndex];
+                currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+            }
+        }
+
+        // Display the first quote immediately
+        displayNextQuote();
+
+        // Change quote every 5 seconds
+        setInterval(displayNextQuote, 5000);
+    </script>
 </body>
 </html>
