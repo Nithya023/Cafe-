@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to The Toasted Mug, your cozy spot for the finest coffee, tea, and delightful treats. Enjoy classic drip coffee, rich espresso, and specialty lattes.">
+    <meta name="keywords" content="The Toasted Mug, coffee, cafe, tea, espresso, latte, cappuccino, macchiato, iced coffee, hot chocolate, plant-based milk, bakery, cozy cafe, pet friendly, free wifi, photo booth, outdoor seating, vegan options, indoor games">
+    <meta name="author" content="The Toasted Mug Team">
+    <title>The Toasted Mug - Your Cozy Coffee & Tea Haven</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fef9f4; /* Ivory/Beige */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        /* Custom styles for a more cafe-like feel with new colors */
+        .header-bg {
+            background-color: #3e2c23; /* Dark Brown */
+        }
+        .text-accent {
+            color: #6f4e37; /* Coffee Brown */
+        }
+        .btn-primary {
+            background-color: #c19a6b; /* Caramel */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #6f4e37; /* Coffee Brown on hover */
+        }
+        .card-bg {
+            background-color: #f5e9dc; /* Cream */
+        }
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            fill: #6f4e37; /* Coffee Brown for icons */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="header-bg text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-4xl font-bold rounded-md p-2">The Toasted Mug</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#menu" class="hover:text-fef9f4 text-lg">Menu</a></li>
+                    <li><a href="#features" class="hover:text-fef9f4 text-lg">Features</a></li>
+                    <li><a href="#about" class="hover:text-fef9f4 text-lg">About Us</a></li>
+                    <li><a href="#contact" class="hover:text-fef9f4 text-lg">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section id="hero" class="text-center mb-16">
+            <h2 class="text-5xl font-extrabold text-accent mb-6">Welcome to The Toasted Mug!</h2>
+            <p class="text-xl text-gray-700 leading-relaxed mb-8">
+                Your cozy haven for exceptional coffee, delightful teas, and scrumptious treats. At <span class="font-semibold">The Toasted Mug</span>, every sip and bite is crafted with passion.
+            </p>
+            <img src="https://placehold.co/1000x500/f5e9dc/3e2c23?text=Cozy+Cafe+Interior" alt="A warm and inviting interior of The Toasted Mug cafe with comfortable seating and soft lighting." class="w-full h-auto rounded-xl shadow-lg mx-auto max-w-4xl">
+        </section>
+
+        <section id="menu" class="mb-16">
+            <h3 class="text-4xl font-bold text-center text-accent mb-10">Our Delicious Offerings at The Toasted Mug</h3>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Coffee Section -->
+                <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200">
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                        <svg class="feature-icon mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                        Coffee Creations
+                    </h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><span class="font-medium">Classic Drip Coffee:</span> Perfectly brewed for that morning kick. <span class="font-bold text-accent">₹150</span></li>
+                        <li><span class="font-medium">Espresso:</span> A rich, intense shot, the heart of many of our drinks. <span class="font-bold text-accent">₹120</span></li>
+                        <li><span class="font-medium">Lattes:</span> Smooth espresso with steamed milk, a creamy delight. <span class="font-bold text-accent">₹200</span></li>
+                        <li><span class="font-medium">Cappuccinos:</span> Espresso with foamed milk, a classic favorite. <span class="font-bold text-accent">₹190</span></li>
+                        <li><span class="font-medium">Macchiatos:</span> Espresso "stained" with a dash of milk, for the purist. <span class="font-bold text-accent">₹180</span></li>
+                        <li><span class="font-medium">And more:</span> Explore our full range of coffee beverages at <span class="font-semibold">The Toasted Mug</span>.</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gray-600">
+                        Learn more about the history and types of coffee on <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Wikipedia</a>.
+                    </p>
+                </div>
+
+                <!-- Tea Section -->
+                <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200">
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                        <svg class="feature-icon mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4h3a4 4 0 0 0 4-4V6a4 4 0 0 0-4-4z"></path><path d="M2 14h12a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H2z"></path><line x1="16" y1="2" x2="16" y2="10"></line></svg>
+                        Soothing Teas
+                    </h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><span class="font-medium">Various types of hot tea:</span> From robust black teas to delicate green and herbal infusions. <span class="font-bold text-accent">₹100 - ₹160</span></li>
+                        <li>Enjoy a calming moment with a cup of tea from <span class="font-semibold">The Toasted Mug</span>.</li>
+                    </ul>
+                </div>
+
+                <!-- Iced Drinks Section -->
+                <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200">
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                        <svg class="feature-icon mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v18h12V3H6z"></path><path d="M12 18V6"></path><path d="M9 9h6"></path></svg>
+                        Refreshing Iced Drinks
+                    </h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><span class="font-medium">Iced Coffee:</span> Your favorite brew, chilled to perfection. <span class="font-bold text-accent">₹180</span></li>
+                        <li><span class="font-medium">Iced Tea:</span> Crisp and cool, ideal for a warm day. <span class="font-bold text-accent">₹140</span></li>
+                        <li><span class="font-medium">Other cold beverages:</span> A variety of refreshing options to quench your thirst. <span class="font-bold text-accent">₹150 - ₹220</span></li>
+                    </ul>
+                </div>
+
+                <!-- Other Specialties Section -->
+                <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200 col-span-full md:col-span-1 lg:col-span-2 mx-auto w-full max-w-2xl">
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                        <svg class="feature-icon mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        Beyond the Bean & Leaf
+                    </h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><span class="font-medium">Hot Chocolate:</span> Rich and comforting, a classic treat. <span class="font-bold text-accent">₹210</span></li>
+                        <li><span class="font-medium">Specialty drinks:</span> Indulge in unique creations like mochas or flavored lattes. <span class="font-bold text-accent">₹230 - ₹280</span></li>
+                        <li><span class="font-medium">Plant-based milk options:</span> Almond, oat, and soy milk available for all your favorite beverages at <span class="font-semibold">The Toasted Mug</span>. <span class="font-bold text-accent">+₹50</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="mb-16 text-center">
+            <h3 class="text-4xl font-bold text-accent mb-10">Features at The Toasted Mug</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center">
+                    <svg class="feature-icon mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                    <p class="text-xl font-semibold text-gray-800">Pet Friendly</p>
+                    <p class="text-gray-700 text-sm mt-1">Bring your furry friends along!</p>
+                </div>
+                <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center">
+                    <svg class="feature-icon mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12" y2="20"></line></svg>
+                    <p class="text-xl font-semibold text-gray-800">Free Wi-Fi</p>
+                    <p class="text-gray-700 text-sm mt-1">Stay connected while you relax.</p>
+                </div>
+                <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center">
+                    <svg class="feature-icon mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg>
+                    <p class="text-xl font-semibold text-gray-800">Cozy Photo Booth</p>
+                    <p class="text-gray-700 text-sm mt-1">Capture your Toasted Mug moments!</p>
+                </div>
+                <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center">
+                    <svg class="feature-icon mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <p class="text-xl font-semibold text-gray-800">Outdoor Seating</p>
+                    <p class="text-gray-700 text-sm mt-1">Enjoy your coffee al fresco.</p>
+                </div>
+                <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center">
+                    <svg class="feature-icon mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <p class="text-xl font-semibold text-gray-800">Vegan & Plant-Based Milk Options</p>
+                    <p class="text-gray-700 text-sm mt-1">Delicious choices for everyone.</p>
+                </div>
+                <div class="card-bg p-6 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center">
+                    <svg class="feature-icon mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="16" y2="21"></line><line x1="3" y1="8" x2="21" y2="8"></line><line x1="3" y1="16" x2="21" y2="16"></line></svg>
+                    <p class="text-xl font-semibold text-gray-800">Indoor Games</p>
+                    <p class="text-gray-700 text-sm mt-1">Board games and more for fun!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="text-center mb-16">
+            <h3 class="text-4xl font-bold text-accent mb-6">About The Toasted Mug</h3>
+            <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                Nestled in the heart of the city, <span class="font-semibold">The Toasted Mug</span> is more than just a cafe; it's a community hub where friends gather, ideas brew, and moments are savored. We pride ourselves on sourcing the finest ingredients and crafting every item with care. Come experience the warmth and charm that makes us unique.
+            </p>
+        </section>
+
+        <section id="contact" class="text-center">
+            <h3 class="text-4xl font-bold text-accent mb-6">Connect with The Toasted Mug</h3>
+            <p class="text-lg text-gray-700 mb-4">
+                Have questions or want to place an order? Reach out to us!
+            </p>
+            <a href="mailto:info@thetoastedmug.com" class="btn-primary inline-block px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl">
+                Email The Toasted Mug
+            </a>
+            <p class="mt-8 text-gray-600 text-sm">
+                For delicious pastries and baked goods, visit our conceptual bakery section at <a href="http://TheToastedMug.com/bakery" class="text-blue-600 hover:underline">TheToastedMug.com/bakery</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer class="header-bg text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 The Toasted Mug. All rights reserved.</p>
+            <p class="mt-2 text-sm">Crafted with care by The Toasted Mug team.</p>
+        </div>
+    </footer>
+</body>
+</html>
